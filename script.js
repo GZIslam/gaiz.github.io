@@ -32,10 +32,18 @@ $(function(){
         coords = [];
     canv.width = window.innerWidth;
     canv.height = window.innerHeight;
-
+    document.getElementById('color').oninput = function(){
+        colour = this.value;
+    }
+    document.getElementById('clear').onclick = function(){
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canv.width, canv.height );
+        ctx.beginPath();
+        coords.length = 0;
+    }
     canv.addEventListener('mousedown', function(e){
         isMouseDown = true;
-        coords.push({x: e.clientX, y: e.clientY, break: true});
+        coords.push({x: e.clientX, y: e.clientY, break: true, z : colour});
     });
     canv.addEventListener('mouseup', function(e){
         isMouseDown = false;
@@ -43,7 +51,7 @@ $(function(){
     canv.addEventListener('mousemove', function(e){
         drawall(ctx, e, coords, canv, colour);
         if (isMouseDown){
-            coords.push({x: e.clientX, y: e.clientY});
+            coords.push({x: e.clientX, y: e.clientY,});
         }
     });
 });
