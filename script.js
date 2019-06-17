@@ -29,8 +29,8 @@ $(function(){
         isMouseDown = false,
         radius = 10;
         coords = [];
-    canv.width = window.innerWidth ;
-    canv.height = window.innerHeight;
+        canv.width = window.innerWidth ;
+        canv.height = window.innerHeight;
     document.onwheel = function(e){
         if (e.deltaY > 0){
             radius--;
@@ -41,10 +41,6 @@ $(function(){
         else{
             radius++;
         }
-        drawall(ctx, e, coords, canv, radius);
-    }
-    if (e.keyCode === 46){
-        coords.length = 0;
         drawall(ctx, e, coords, canv, radius);
     }
     canv.addEventListener('mousedown', function(e){
@@ -61,10 +57,10 @@ $(function(){
             coords.push({x: e.clientX, y: e.clientY, radius: radius});
         }
     });
-    document.addEventListener('keydown', function(e){
-        if(e.keyCode === 46){
-            clear(ctx, e, coords, canv, radius);
-            console.log('Cleared');
+    document.addEventListener('keydown',function(e) {
+        if (e.keyCode === 46) {
+            coords.length = 0;
+            drawall(ctx, e, coords, canv, radius);
         }
-    })
+    });
 });
