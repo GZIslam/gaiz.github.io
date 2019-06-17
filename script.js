@@ -22,26 +22,6 @@ function drawall(ctx, e, coords, canv, radius){
     ctx.arc(e.clientX, e.clientY, radius, 0, Math.PI * 2);
     ctx.stroke();
 }
-
-function clear(ctx, e, coords, canv, radius)
-{
-    coords.forEach(function(b){
-        ctx.lineWidth = b.radius *2;
-        ctx.fillStyle = 'white';
-        ctx.strokeStyle = 'white';
-        if (!b.break ) {
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
-        }
-        ctx.beginPath();
-        ctx.arc(b.x, b.y, b.radius, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.beginPath();
-        ctx.moveTo(b.x, b.y);
-    });
-    coords.length = 0;
-}
-
 $(function(){
     var
         canv = document.getElementById('canvas'),
@@ -61,6 +41,10 @@ $(function(){
         else{
             radius++;
         }
+        drawall(ctx, e, coords, canv, radius);
+    }
+    if (e.keyCode === 46){
+        coords.length = 0;
         drawall(ctx, e, coords, canv, radius);
     }
     canv.addEventListener('mousedown', function(e){
