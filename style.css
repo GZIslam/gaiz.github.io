@@ -4,17 +4,11 @@ body{
 canvas{
     display: block;
 }
-#b1{
-    background: black;
+#ssilka{
+    font-size: 20px;
+    color: magenta;
+    font-style: oblique;
 }
-b2{
-    color: blue;
+.tols{
+    position: relative;
 }
-b3{
-    color: yellow;
-}
-b4{
-    color: green;
-}
-
-
