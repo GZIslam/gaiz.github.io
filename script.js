@@ -43,10 +43,6 @@ $(function(){
         }
         drawall(ctx, e, coords, canv, radius);
     }
-    if (e.keyCode === 46){
-        coords.length = 0;
-        drawall(ctx, e, coords, canv, radius);
-    }
     canv.addEventListener('mousedown', function(e){
         isMouseDown = true;
         coords.push({x: e.clientX, y: e.clientY, break: true, radius: radius});
@@ -62,9 +58,9 @@ $(function(){
         }
     });
     document.addEventListener('keydown', function(e){
-        if(e.keyCode === 46){
-            clear(ctx, e, coords, canv, radius);
-            console.log('Cleared');
+        if (e.keyCode === 46){
+            coords.length = 0;
+            drawall(ctx, e, coords, canv, radius);
         }
     })
 });
