@@ -33,13 +33,13 @@ $(function(){
     canv.height = window.innerHeight;
     document.onwheel = function(e){
         if (e.deltaY > 0){
-            radius--;
-            if( radius < 5){
-                radius ++;
+            radius = radius - 5;
+            if( radius < 2){
+                radius = radius + 5;
             }
         }
         else{
-            radius++;
+            radius = radius + 5;
         }
         drawall(ctx, e, coords, canv, radius);
     }
