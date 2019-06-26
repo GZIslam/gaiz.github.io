@@ -1,0 +1,94 @@
+body{
+  display: block;
+     background-color: black;
+     margin-left: 140px
+ }
+.vk{
+  background-color: black;
+  border: 0
+}
+.menu__item{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 133px;
+}
+.myprojects{
+  font-family: 'Righteous', cursive;
+  font-size: 111px;
+  color: white;
+  margin-bottom: 70px;
+  margin-top: 70px
+}
+.gpaint_text{
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  font-size: 70px;
+  margin-right: 500px
+}
+.gpaint_instr{
+  font-family: 'Open Sans', sans-serif;
+}
+.snake_text{
+  font-family: 'Indie Flower', cursive;
+}
+.snake_instr{
+  font-family: 'Open Sans', sans-serif;
+}
+ul, li{
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+a{
+  color: white
+}
+.img{
+  margin-left:570px;
+  margin-bottom: -50px
+}
+.proj{
+  margin-bottom: -97px;
+  margin-left: 44px
+}
+.number{
+  font-size: 70px;
+  margin-top: 7px;
+  margin-left: -197px;
+  margin-right: 10px;
+  color: white
+}
+canvas{
+  display: block;
+  margin-top: -30px;
+  margin-left: -373px
+}
+.inst{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: "#090909";
+
+}
+.gpainttext3{
+  color: white;
+  font-size: 120px
+}
+canvassnake{
+  display: block;
+  margin-left: -373px
+}
+.issd{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: "#090909";
+  margin-left: 500px;
+  margin-bottom: 70px
+}
+.pr{
+  margin-left: -70px
+}
+.intre{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: "#090909";
+}
