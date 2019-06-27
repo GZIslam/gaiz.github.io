@@ -53,3 +53,11 @@ canvas{
 .header{
   margin-right: 100px
 }
+.color-but{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  font-size: 27px;
+  color: '#090909';
+  margin-left: 650px
+  margin-top: -5px
+}
