@@ -28,17 +28,25 @@ $(function(){
         ctx = canv.getContext('2d'),
         isMouseDown = false,
         radius = 10;
-        coords = [];
+        coords = [],
+        coords [1] = {x: 795, y: 185, break: true, radius: 20},
+coords[2]= {x: 480, y: 249, break: true, radius: 20},
+coords[3]={x: 710, y: 304, break: true, radius: 20},
+coords[4]= {x: 605, y: 176, break: true, radius: 70},
+coords[5]= {x: 215, y: 276, break: true, radius: 45},
+coords[6]= {x: 1033, y: 155, break: true, radius: 90},
+coords[7]= {x: 921, y: 301, break: true, radius: 70},
+coords[8]={x: 110, y: 64, break: true, radius: 25},
         canv.width = 1200;
         canv.height = 400;
     document.onwheel = function(e){
-        if (e.deltaY > 0){
+        if (e.deltaY > 0 && e.altKey){
             radius = radius - 5;
             if( radius < 2){
                 radius = radius + 5;
             }
         }
-        else{
+        if(e.deltaY < 0 && e.altKey){
             radius = radius + 5;
         }
         drawall(ctx, e, coords, canv, radius);
