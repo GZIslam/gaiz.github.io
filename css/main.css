@@ -1,7 +1,9 @@
 body{
   display: block;
      background-color: black;
-     margin-left: 140px
+     margin-left: 420px;
+     width:1700px;
+     height: 800px
  }
 .vk{
   background-color: black;
