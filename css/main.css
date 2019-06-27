@@ -1,97 +1,54 @@
 body{
-  display: block;
-     background-color: black;
-     margin-left: 420px;
-     width:1700px;
-     height: 800px
- }
-.vk{
   background-color: black;
-  border: 0
-}
-.menu__item{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  margin-top: 15px;
-  margin-right: 133px;
-}
-.myprojects{
-  font-family: 'Righteous', cursive;
-  font-size: 111px;
-  color: white;
-  margin-bottom: 70px;
-  margin-top: 70px
-}
-.gpaint_text{
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 70px;
-  margin-right: 500px
-}
-.gpaint_instr{
-  font-family: 'Open Sans', sans-serif;
-}
-.snake_text{
-  font-family: 'Indie Flower', cursive;
-}
-.snake_instr{
-  font-family: 'Open Sans', sans-serif;
-}
-ul, li{
   display: block;
-  padding: 0;
-  margin: 0;
-}
-a{
-  color: white
-}
-.img{
-  margin-left:570px;
-  margin-bottom: -50px
-}
-.proj{
-  margin-bottom: -97px;
-  margin-left: 44px
-}
-.number{
-  font-size: 70px;
-  margin-top: 7px;
-  margin-left: -197px;
-  margin-right: 10px;
-  color: white
-}
-canvas{
-  display: block;
-  margin-top: -30px;
-  margin-left: -373px
-}
-.inst{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  color: "#090909";
+  margin-left: 200px;
+  padding: 0
 
 }
-.gpainttext3{
-  color: white;
-  font-size: 120px
-}
-canvassnake{
-  display: block;
-  margin-left: -373px
-}
-.issd{
+.gmails{
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  color: "#090909";
-  margin-left: 500px;
-  margin-bottom: 70px
+  margin-top: 10px;
+  font-size: 27px;
 }
-.pr{
+a{
+  color: white;
+}
+a:hover {
+  color: yellow;
+  text-decoration: line-through
+}
+.my-projects{
+  font-family: 'Righteous', cursive;
+  margin-top: 57px;
+  font-size: 79px;
+  color: white;
+  margin-left: 340px;
+  margin-right: -100px;
+}
+.on-java-img{
+  margin-left: -630px;
+  margin-top: 50px;
+  margin-right: 400px
+}
+.gpaint-text{
+  font-family: 'Indie Flower', cursive;
+  font-size: 67px;
+  color: white;
+}
+.instr{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  font-size: 27px;
+  color: '#090909';
+  margin-left: 650px
+}
+canvas{
   margin-left: -70px
 }
-.intre{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  color: "#090909";
-  margin-left: 700px
+.main-header{
+  margin-top: 10px;
+  border-bottom: 1px solid #fff
+}
+.header{
+  margin-right: 100px
 }

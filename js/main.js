@@ -19,7 +19,7 @@ function drawall(ctx, e, coords, canv, radius){
     ctx.lineWidth = 1;
     ctx.strokeStyle = "red";
     ctx.beginPath();
-    ctx.arc(e.clientX - 340, e.clientY - 475, radius, 0, Math.PI * 2);
+    ctx.arc(e.clientX -337, e.clientY - 407, radius, 0, Math.PI * 2);
     ctx.stroke();
 }
 $(function(){
@@ -29,8 +29,8 @@ $(function(){
         isMouseDown = false,
         radius = 10;
         coords = [];
-        canv.width = 1800;
-        canv.height = 700;
+        canv.width = 1200;
+        canv.height = 400;
     document.onwheel = function(e){
         if (e.deltaY > 0){
             radius = radius - 5;
@@ -45,7 +45,7 @@ $(function(){
     }
     canv.addEventListener('mousedown', function(e){
         isMouseDown = true;
-        coords.push({x: e.clientX - 340, y: e.clientY- 475, break: true, radius: radius});
+        coords.push({x: e.clientX -337, y: e.clientY-407, break: true, radius: radius});
     });
     canv.addEventListener('mouseup', function(e){
         isMouseDown = false;
@@ -54,7 +54,7 @@ $(function(){
     canv.addEventListener('mousemove', function(e){
         drawall(ctx, e, coords, canv, radius);
         if (isMouseDown){
-            coords.push({x: e.clientX - 340, y: e.clientY- 475, radius: radius});
+            coords.push({x: e.clientX -337, y: e.clientY-407, radius: radius});
         }
     });
     document.addEventListener('keydown', function(e){
