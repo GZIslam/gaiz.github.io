@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+}
+.blok{
+	height: 100px;
+}
+.stiker{
+	width: 450px;
+	padding: 30px;
+	left: 35px;
+	top: 90px;
+	position: absolute;
+	animation: linear	2s stikerstep infinite;
+	z-index: 3;
+}
+.gipnoz{
+	width: 500px;
+	animation: linear 5s gipnozrotate infinite;
+	z-index: 2;
+}
+.fon{
+	z-index: 0;
+	position: fixed;
+}
+.rekl{
+	z-index: 3;
+}
+@-webkit-keyframes stikerstep {
+		0%{top: 0px;}
+		25%{top: 10px;}
+		50%{top: 20px;}
+		75%{top: 10px;}
+		100%{top: 0px;}
+}
+@keyframes stikerstep {
+	0%{top: 0px;}
+	25%{top: 10px;}
+	50%{top: 20px;}
+	75%{top: 10px;}
+	100%{top: 0px;}
+}
+.stiker{
+	width: 450px;
+	padding: 30px;
+	left: 35px;
+	top: 70px;
+	position: absolute;
+	animation: linear	2s stikerstep infinite;
+	z-index: 3;
+}
+.gipnoz{
+	width: 500px;
+	animation: linear 5s gipnozrotate infinite;
+	z-index: 2;
+}
+@keyframes gipnozrotate {
+	100%{transform: rotate(-360deg);}
+
+}
